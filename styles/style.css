@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+:root{
+    --background-color: #000000;
+    --primary-color: #F6F6F6;
+    --second-color: #FFAE00;
+    --hover-color: #202020;
+    --hover2-color:#FDC448;
+    --title-font: 'Krona One', 'sans-serif';
+    --second-font: 'Montserrat', 'sans-serif';
+}
+#strong{
+    color: var(--second-color);
+}
+body{
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+.header_menu{
+    display: flex;
+    padding: 3% 0% 0% 10%;
+    gap: 20px;
+
+}
+.header_menu_links{
+    color: var(--second-color);
+    font-family: var(--second-font);
+    font-size: 1.65rem;
+    font-weight: 800;
+}
+.all{
+    display: flex;
+    padding: 5% 10%;
+    gap: 82px;
+    align-items: center;
+}
+.all_text{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 2rem;
+}
+.all_text_tittle{
+    font-family: var(--title-font);
+    font-size: 2.3rem;
+}
+.all_text_paragraph{
+    font-family: var(--second-font);
+    font-size: 1.25rem;
+}
+.all_text_social{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+
+}
+.subtittle{
+    font-family: var(--title-font);
+    
+}
+.all_text_social_links{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 55%;
+    padding: 1rem;
+    margin: 5px;
+    gap: 10px;
+    border: 2px solid var(--second-color);
+    border-radius: 8px;
+    font-family: var(--second-font);
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.5rem;
+
+}
+.image{ 
+    width: 35%;
+    border-radius: 30px;
+    height: 30%;
+}
+.all_text_social_links:hover{
+    background-color: var(--hover-color);
+}
+.header_menu_links:hover{
+    color: var(--hover2-color);
+}
+.footer{
+    background-color: var(--second-color);
+    text-align: center;
+    padding: 1.3rem;
+    font-family: var(--second-font);
+    font-size: 24px;
+    font-weight: 400;
+}
+.unlist{
+    font-family: var(--second-font);
+    margin-left: 8%;
+    font-size: 1.25rem;
+}
+#link_about{
+    color: var(--second-color);
+}
+#link_about:hover{
+    color: var(--hover2-color)
+}
+@media (max-width: 1200px){
+    .header_menu{
+        padding: 5% 0% 0% 0%;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .all{
+        flex-direction: column-reverse;
+        padding: 8% 8% 5% 8%;
+
+    }
+    .all_text{
+        width: auto;
+    }
+}
