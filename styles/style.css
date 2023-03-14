@@ -116,7 +116,7 @@ body{
     .header_menu{
         padding: 5% 2% 0% 2%;
         justify-content: center;
-        gap: 0.5rem;
+        gap: 0rem;
     }
     .all{
         flex-direction: column-reverse;
