@@ -114,16 +114,20 @@ body{
 }
 @media (max-width: 1200px){
     .header_menu{
-        padding: 5% 0% 0% 0%;
+        padding: 5% 2% 0% 2%;
         justify-content: center;
-        gap: 3rem;
+        gap: 1.5rem;
     }
     .all{
         flex-direction: column-reverse;
-        padding: 8% 8% 5% 8%;
+        padding: 8%;
 
     }
     .all_text{
         width: auto;
     }
+    .image{
+        width: 50%;
+    }
+        
 }
