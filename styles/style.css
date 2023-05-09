@@ -7,13 +7,33 @@
     text-decoration: none;
 }
 :root{
+    --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png");
     --background-color: #000000;
     --primary-color: #F6F6F6;
+
     --second-color: #FFAE00;
     --hover-color: #202020;
     --hover2-color:#FDC448;
     --title-font: 'Krona One', 'sans-serif';
     --second-font: 'Montserrat', 'sans-serif';
+
+
+}
+.dark_mode{
+    --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
+    --background-color: #FFFFFF;
+    --primary-color: #000000;
+}
+#botao{
+    display: none;
+}
+.mudar_tema{
+    background: var(--label-icon);
+    background-repeat: no-repeat;
+    padding: 67px 67px 0px 0px;
+    margin: 1.5rem 1.5rem 0 auto;
+    cursor: pointer;
+    transition: 1s;
 }
 #strong{
     color: var(--second-color);
@@ -21,6 +41,11 @@
 body{
     background-color: var(--background-color);
     color: var(--primary-color);
+    transition: 2s;
+}
+.header{
+    display: flex;
+    margin: 0;
 }
 .header_menu{
     display: flex;
@@ -133,5 +158,4 @@ body{
     .image{
         width: 50%;
     }
-        
 }
